@@ -1,10 +1,31 @@
 class Solution {
   String generateTheString(int n) {
-    if (n % 2 == 1) {
-      return List.filled(n, 'a').join();
-    } else {
-      return List.filled(n - 1, 'a').join() + 'b';
+    String chars = "abcdefghijklmnoprstuvwxyz";
+
+    String op = "";
+
+    List<String> charsArray = chars.split('');
+    int count = 0;
+
+    int cycle = 1;
+
+    int countN = 1;
+
+    for (int i = 0; i < n; i++) {
+      op += charsArray[count] * countN;
+      if (i == 25) {
+        cycle = 2;
+
+        if (cycle % 2 == 0) {
+          countN = 2;
+        }
+      } else {
+        count++;
+      }
     }
+
+    print(op);
+    return "";
   }
 }
 
