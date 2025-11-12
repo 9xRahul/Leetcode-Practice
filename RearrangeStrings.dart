@@ -43,5 +43,5 @@ class Solution {
 
 void main() {
   Solution sol = Solution();
-  print(sol.reformat("covid201569"));
+  print(sol.reformat("covid2015669"));
 }
