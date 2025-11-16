@@ -51,6 +51,6 @@ class Solution {
 
 void main() {
   Solution sol = Solution();
-  print(sol.findContentChildren([10, 9, 8, 7,9], [5, 6, 7, 8]));
+  print(sol.findContentChildren([10, 9, 8, 7,9], [5, 6, 7, 8,9]));
   print(sol.findContentChildrenGreedy([10, 9, 8, 7], [5, 6, 7, 8]));
 }
