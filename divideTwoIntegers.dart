@@ -37,5 +37,5 @@ class Solution {
 
 void main() {
   Solution sol = Solution();
-  print(sol.divide(10, 3));
+  print(sol.divide(10, 5));
 }
