@@ -18,5 +18,5 @@ class Solution {
 
 void main() {
   Solution sol = Solution();
-  print(sol.sumOfUnique([2, 3, 1, 1, 4, 3]));
+  print(sol.sumOfUnique([2, 3, 1, 1, 4, 8]));
 }
