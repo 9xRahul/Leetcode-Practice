@@ -1,5 +1,5 @@
 void main() {
-  List<int> arr = [1, 2, 2, 6, 6, 7, 8, 9, 9, 1];
+  List<int> arr = [1, 2, 2, 6, 6, 7, 8, 9, 9, 1,34];
 
   Map<int, int> c = {};
 
