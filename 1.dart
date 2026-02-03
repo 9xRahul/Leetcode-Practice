@@ -1,14 +1,16 @@
+import 'dart:io';
+
 void main() {
-  List<int> arr = [10, 11, 12, 11, 10];
+  int n = 5;
 
-  Map<int, int> seen = {};
-
-  for (int i = 0; i < arr.length; i++) {
-    if (seen.containsKey(arr[i])) {
-      print(arr[i]);
-      break;
-    } else {
-      seen[arr[i]] = 1;
+  for (int i = n; i >= 1; i--) {
+    for (int j = i; j >= 1; j--) {
+      if (j != 1) {
+        stdout.write('$j-');
+      } else {
+        stdout.write('$j');
+      }
     }
+    stdout.writeln(); // move to next line
   }
 }
